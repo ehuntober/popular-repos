@@ -1,0 +1,160 @@
+*, body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0 10% 5% 10%;
+}
+
+header{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1{
+    font-size: 30px;
+}
+
+.container {
+    background: darkslateblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.down-p{
+    margin-bottom: 1rem;
+}
+
+.container .content-1 {
+    width: 20%;
+    padding: 0%
+}
+
+.container .content-1 img {
+    width: 100%;
+}
+
+.container .content-2 {
+    width: 80%;
+    padding: 0%;
+    padding-left: 2%;
+}
+
+.container .content-2 h1 {
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+.content-2-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    padding: 2% 0;
+}
+
+.content-2-button button {
+    height: 40px;
+    background: white;
+    color: darkslateblue;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    width: 100%
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+    margin: 2% 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .content-1 {
+        width: 100%;
+        padding: 0%
+    }
+    
+    .container .content-1 img {
+        width: 100%;
+    }
+    
+    .container .content-2 {
+        width: 100%;
+        padding: 0%;
+        padding-left: 2%;
+    }
+    
+    .container .content-2 h1 {
+        /* font-size: 1.5em; */
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+
+    .container .content-2 p{
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    .container .content-2 h1 {
+        /* font-size: 1.5em; */
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+
+
+
+    .container .content-2 p{
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+    .content-2-button {
+        flex-direction: column;
+        padding: 0 10%;
+        margin-top: 3%;
+    }
+
+    button {
+        margin-bottom: 3%;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+}

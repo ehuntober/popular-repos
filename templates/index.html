@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title> Trending Repo</title>
+        <link href= "{{ url_for('static', filename ='style.css') }}" rel="stylesheet" type="text/css">
+    </head>
+<body>
+
+<div class="main">
+    <header>
+            <h1>Trending Repos</h1>
+    </header>   
+    {% for item in list_of_data['items'] %}
+
+    <div class="container">
+        <div class="content-1">
+            <img src="{{ item.owner.avatar_url }}" alt="meta" >
+                    
+        </div>
+        
+        <div class="content-2">
+            <h1> {{  item.full_name }} </h1>
+            <p>{{ item.description }} </p>
+
+            <div class="content-2-button">
+                <button disabled> <strong>Stars</strong>:{{ item.stargazers_count}}  </button>
+                <button disabled>  <strong>Issues</strong>:{{ item.open_issues_count }} </button>
+                <button disabled> <strong>Forks</strong>: {{ item.forks_count }} </button>
+                <button disabled> <strong>Languages</strong> {{ item.language }}  </button>
+            </div>
+           <p class="down-p"> Submitted on  {{item.created_at |truncate(13) }}  </p>
+           <p class="down-p"> <a href="{{ item.homepage }}">Github Link</a></p>
+        </div>     
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
+
+
+
+
