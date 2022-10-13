@@ -10,9 +10,27 @@ Popular Repos is a web based tool that gets the current trending repositories on
 5. Shows the github URL to the project
 6. Shows the link website link to the project 
 
+#HOW TO RUN
+
+> Fork and Clone the Repository to your Local Machine
+
+> Create a virtual env
+
+> install all dependencies from the requirement.txt
+
+> Navigate to the parent folder Then run python app.py
+
+> Visit localhost:
+
+> Voila!, your web app is now powered up
+
+Live link: https://popular-repos.onrender.com
+
+![My Remote Image](https://github.com/ehuntober/popular-repos/blob/main/screenshot.JPG)
 
 
 
 
-https://popular-repos.onrender.com
+
+
 
